@@ -27,8 +27,11 @@ class GTrackerActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(binding.fragmentContainerView.id) as NavHostFragment
         navController = navHostFragment.navController
 
+
         setSupportActionBar(binding.materialToolbar)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
+
+
+        appBarConfiguration = AppBarConfiguration(binding.bottomNavigationView.menu)
 
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.bottomNavigationView.setupWithNavController(navController)
@@ -45,12 +48,7 @@ class GTrackerActivity : AppCompatActivity() {
                     binding.bottomNavigationView.visibility = View.VISIBLE
                     binding.materialToolbar.visibility = View.VISIBLE
                 }
-
             }
-
-
         }
-
-
     }
 }
