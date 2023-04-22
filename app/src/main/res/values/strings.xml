@@ -5,4 +5,5 @@
     <string name="goal_tracker">Goal Tracker</string>
     <string name="home_title">Ana sayfa</string>
     <string name="goals">Hedeflerim</string>
+    <string name="goals_title">Hedefler</string>
 </resources>
