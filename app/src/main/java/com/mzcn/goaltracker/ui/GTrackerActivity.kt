@@ -39,10 +39,15 @@ class GTrackerActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.materialToolbar)
 
+        val appBarConfiguration = AppBarConfiguration(binding.bottomNavigationView.menu)
+
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        binding.bottomNavigationView.setupWithNavController(navController)
+
         navController.addOnDestinationChangedListener { _, destination, _ ->
             val isVisible = destination.id != R.id.splashFragment
 
-
+            binding.bottomNavigationView.isVisible = isVisible
             binding.materialToolbar.isVisible = isVisible
         }
     }

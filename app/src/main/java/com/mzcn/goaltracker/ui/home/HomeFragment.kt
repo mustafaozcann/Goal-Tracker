@@ -27,5 +27,13 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         val pagerDecorator = CirclePagerIndicatorDecoration()
         binding.goalsRecyclerView.addItemDecoration(pagerDecorator)
+
+
+
+
+
     }
+
+
+
 }
