@@ -22,7 +22,6 @@ import com.mzcn.goaltracker.ui.home.HomeFragment
 
 class GTrackerActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -32,22 +31,15 @@ class GTrackerActivity : AppCompatActivity() {
         initView()
     }
     private fun initView() = with(binding){
-
         val navHostFragment =
             binding.fragmentContainerView.getFragment() as NavHostFragment
         val navController = navHostFragment.navController
 
         setSupportActionBar(binding.materialToolbar)
 
-        val appBarConfiguration = AppBarConfiguration(binding.bottomNavigationView.menu)
-
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        binding.bottomNavigationView.setupWithNavController(navController)
-
         navController.addOnDestinationChangedListener { _, destination, _ ->
             val isVisible = destination.id != R.id.splashFragment
 
-            binding.bottomNavigationView.isVisible = isVisible
             binding.materialToolbar.isVisible = isVisible
         }
     }
