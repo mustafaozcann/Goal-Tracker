@@ -54,7 +54,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:ellipsize="end"
-                android:fontFamily="@font/bevan"
+                android:fontFamily="@font/montserrat_bold"
                 android:maxLines="2"
                 android:text="Şirket Kuracağım"
                 android:textAlignment="center"
@@ -70,6 +70,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:ellipsize="end"
                 android:fontFamily="serif-monospace"
@@ -86,8 +87,8 @@
             <TextView
                 android:id="@+id/endDateTextView"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/bevan"
                 android:text="22/04/2023"
@@ -95,9 +96,10 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/endTextView"
-                app:layout_constraintStart_toStartOf="@+id/endTextView"
-                app:layout_constraintTop_toBottomOf="@+id/endTextView" />
+                app:layout_constraintEnd_toEndOf="@+id/goal_title"
+                app:layout_constraintStart_toStartOf="@+id/goal_title"
+                app:layout_constraintTop_toBottomOf="@+id/endTextView"
+                app:layout_constraintVertical_bias="0.0" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
