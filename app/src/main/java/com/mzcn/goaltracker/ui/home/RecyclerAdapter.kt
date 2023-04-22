@@ -18,7 +18,7 @@ class RecyclerAdapter() : RecyclerView.Adapter<RecyclerAdapter.CardViewHolder>()
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return 18
     }
 
     override fun onBindViewHolder(holder: CardViewHolder, position: Int) {
