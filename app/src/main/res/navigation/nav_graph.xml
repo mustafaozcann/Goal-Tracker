@@ -26,8 +26,6 @@
         <action
             android:id="@+id/action_homeFragment_to_goalsFragment"
             app:destination="@id/goalsFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true"
             />
     </fragment>
     <fragment
