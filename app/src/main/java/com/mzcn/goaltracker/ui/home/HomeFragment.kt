@@ -30,7 +30,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
     fun addGoalButtonOnClick() {
-        findNavController().navigate(R.id.action_homeFragment_to_goalsFragment)
+        findNavController().navigate(R.id.action_homeFragment_to_goalFragment)
     }
 
 

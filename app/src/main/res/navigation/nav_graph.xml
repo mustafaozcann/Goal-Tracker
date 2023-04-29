@@ -24,19 +24,19 @@
         android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_goalsFragment"
-            app:destination="@id/goalsFragment"
+            android:id="@+id/action_homeFragment_to_goalFragment"
+            app:destination="@id/goalFragment"
             />
     </fragment>
     <fragment
-        android:id="@+id/goalsFragment"
-        android:name="com.mzcn.goaltracker.ui.goals.GoalsFragment"
-        android:label="Goals"
-        tools:layout="@layout/fragment_goals" >
+        android:id="@+id/goalFragment"
+        android:name="com.mzcn.goaltracker.ui.goal.GoalFragment"
+        android:label="Goal"
+        tools:layout="@layout/fragment_goal" >
         <action
-            android:id="@+id/action_goalsFragment_to_homeFragment"
+            android:id="@+id/action_goalFragment_to_homeFragment"
             app:destination="@id/homeFragment"
-            app:popUpTo="@id/goalsFragment"
+            app:popUpTo="@id/goalFragment"
             app:popUpToInclusive="true"
             />
     </fragment>

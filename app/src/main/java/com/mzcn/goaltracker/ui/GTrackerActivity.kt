@@ -20,7 +20,6 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.appbar.AppBarLayout
 import com.mzcn.goaltracker.R
 import com.mzcn.goaltracker.databinding.ActivityMainBinding
-import com.mzcn.goaltracker.ui.goals.GoalsFragment
 import com.mzcn.goaltracker.ui.home.HomeFragment
 
 class GTrackerActivity : AppCompatActivity() {
@@ -57,6 +56,7 @@ class GTrackerActivity : AppCompatActivity() {
                     }
                 } else {
                     setNavigationIcon(null)
+
                 }
             }
 
