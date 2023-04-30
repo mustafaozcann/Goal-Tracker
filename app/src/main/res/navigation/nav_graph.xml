@@ -30,9 +30,9 @@
     </fragment>
     <fragment
         android:id="@+id/goalFragment"
-        android:name="com.mzcn.goaltracker.ui.goal.GoalFragment"
+        android:name="com.mzcn.goaltracker.ui.addGoal.AddGoalFragment"
         android:label="Goal"
-        tools:layout="@layout/fragment_goal" >
+        tools:layout="@layout/fragment_add_goal" >
         <action
             android:id="@+id/action_goalFragment_to_homeFragment"
             app:destination="@id/homeFragment"

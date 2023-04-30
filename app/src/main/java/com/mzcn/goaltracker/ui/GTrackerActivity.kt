@@ -21,11 +21,13 @@ import com.google.android.material.appbar.AppBarLayout
 import com.mzcn.goaltracker.R
 import com.mzcn.goaltracker.databinding.ActivityMainBinding
 import com.mzcn.goaltracker.ui.home.HomeFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class GTrackerActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-
     private lateinit var navController: NavController
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

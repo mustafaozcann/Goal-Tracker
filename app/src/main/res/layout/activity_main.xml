@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:titleCentered="true"
         android:background="@color/dark"
-        app:titleTextColor="@color/textcolor"
+        app:titleTextColor="@color/primary_text_color"
         />
 
 
