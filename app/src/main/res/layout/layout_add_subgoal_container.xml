@@ -23,6 +23,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="auto"
+        android:longClickable="false"
         android:visibility="gone"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
@@ -37,6 +41,7 @@
             android:id="@+id/sub_goal_end_date_edittext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:focusable="false"
             android:hint="Bitiş zamanı"
             android:textColor="@color/primary_text_color" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -56,7 +61,7 @@
         app:hintTextColor="@color/design_default_color_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="40dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/subgoal_edittext"
@@ -73,6 +78,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:focusable="auto"
+        android:longClickable="false"
         android:visibility="gone"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
@@ -88,6 +97,7 @@
             android:id="@+id/sub_goal_start_date_edittext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:focusable="false"
             android:hint="Başlangıç zamanı"
             android:textColor="@color/primary_text_color" />
     </com.google.android.material.textfield.TextInputLayout>
