@@ -23,15 +23,15 @@
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/materialToolbar"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:titleCentered="true" />
+        app:titleCentered="true"
+        android:background="@color/dark"
+        app:titleTextColor="@color/primary_text_color"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
