@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mzcn.goaltracker.R
 
-class RecyclerAdapter() : RecyclerView.Adapter<RecyclerAdapter.CardViewHolder>() {
+class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.CardViewHolder>() {
 
     inner class CardViewHolder(view : View) : RecyclerView.ViewHolder(view){
 

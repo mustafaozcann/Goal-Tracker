@@ -7,7 +7,7 @@ import com.mzcn.goaltracker.databinding.AddSubgoalRecyclerItemBinding
 import com.mzcn.goaltracker.databinding.FragmentAddGoalBinding
 import com.mzcn.goaltracker.databinding.LayoutAddSubgoalContainerBinding
 
-class RecyclerAdapter(val goalBinding: FragmentAddGoalBinding) : RecyclerView.Adapter<AddSubGoalViewHolder>() {
+class RecyclerAdapter(private val goalBinding: FragmentAddGoalBinding) : RecyclerView.Adapter<AddSubGoalViewHolder>() {
 
     private lateinit var binding: AddSubgoalRecyclerItemBinding
     private lateinit var containerBinding: LayoutAddSubgoalContainerBinding

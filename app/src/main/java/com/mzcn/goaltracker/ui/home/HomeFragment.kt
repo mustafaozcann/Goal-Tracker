@@ -13,6 +13,9 @@ import com.mzcn.goaltracker.databinding.FragmentHomeBinding
 class HomeFragment : Fragment(R.layout.fragment_home) {
     private val binding by viewBinding(FragmentHomeBinding::bind)
 
+    private val rAdapter by lazy { RecyclerAdapter() }
+
+    private val rItemDecoration by lazy { RecyclerItemDecoration() }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
@@ -20,8 +23,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
     private fun setupRecyclerView() {
         binding.goalsRecyclerView.apply {
+
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-            adapter = RecyclerAdapter()
+            adapter = rAdapter
+            addItemDecoration(rItemDecoration)
         }
         PagerSnapHelper().attachToRecyclerView(binding.goalsRecyclerView)
 
