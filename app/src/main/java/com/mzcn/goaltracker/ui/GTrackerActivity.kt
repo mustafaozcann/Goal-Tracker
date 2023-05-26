@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.view.View
 import android.window.OnBackInvokedDispatcher
 import androidx.activity.OnBackPressedCallback
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
@@ -25,10 +26,14 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class GTrackerActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
+
     private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
+
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -45,10 +50,8 @@ class GTrackerActivity : AppCompatActivity() {
         setSupportActionBar(binding.materialToolbar)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            val toolBarIsVisible = destination.id != R.id.splashFragment
 
             binding.materialToolbar.apply {
-                isVisible = toolBarIsVisible
                 title = destination.label.toString()
                 if (isVisible && destination.id != R.id.homeFragment) {
                     setNavigationIcon(R.drawable.ic_back_button)
@@ -57,8 +60,8 @@ class GTrackerActivity : AppCompatActivity() {
                         onBackPressedDispatcher.onBackPressed()
                     }
                 } else {
-                    setNavigationIcon(null)
 
+                    setNavigationIcon(null)
                 }
             }
 
